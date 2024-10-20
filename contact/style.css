@@ -811,6 +811,9 @@ main .contents_wrapper .contents_container a {
     width: 100%;
   }
 }
+.mailform_container form .form_parts .recaptcha {
+  margin: 30px 0;
+}
 .mailform_container form p {
   font-size: 13px;
 }
