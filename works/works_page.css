@@ -788,6 +788,9 @@ footer {
   padding-right: 3rem;
   font-weight: 400;
 }
+.gallery .gallery_info table td {
+  font-family: "Manrope", "Noto Sans JP", sans-serif;
+}
 .gallery .gallery_info table td .small {
   font-size: 0.7em;
   line-height: 1.25;
