@@ -6,7 +6,7 @@ function header_date_update() {
     var week = today.getDay();
     var day = today.getDate();
     var week_en= new Array("Sun.","Mon.","Tue.","Wed.","Thu.","Fri.","Sat.");
-    var hour = today.getHours();
+    var minute = ('00' + today.getHours()).slice(-2);
     var minute = ('00' + today.getMinutes()).slice(-2);
     var second = ('00' + today.getSeconds()).slice(-2);
     let date_update = document.getElementById('today')
