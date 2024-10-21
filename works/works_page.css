@@ -47,7 +47,9 @@ header .header_nav p {
   display: inline-block;
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -766,7 +768,6 @@ footer {
 }
 .gallery .gallery_info .building_head {
   font-size: 3rem;
-  font-family: "Manrope", sans-serif;
 }
 .gallery .gallery_info .building_head .building_head_tag {
   font-size: 30px;
@@ -777,6 +778,7 @@ footer {
   border-radius: none;
   letter-spacing: 0;
   vertical-align: middle;
+  font-family: "Manrope", sans-serif;
 }
 .gallery .gallery_info .building_head span {
   display: inline-block;
