@@ -47,7 +47,9 @@ header .header_nav p {
   display: inline-block;
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
