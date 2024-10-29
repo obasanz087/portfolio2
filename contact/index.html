@@ -67,25 +67,31 @@
                 </div>
                 <div class="contents_container">
                     <p>よっぽどないとは思いますが、何かあったらこちらにご連絡ください。</p>
-                    <h2>Twiiter DM</h2>
+                    <h2>Twitter DM</h2>
                     <p>X <s>Twitter</s> のDMにて受け付けています。</p>
                     <p class="notice">送信にはXのアカウントが必要です。</p>
-                    <a href="../works/index.html" class="link_btn">Twiiter DM<span></span></a>
+                    <a href="../works/index.html" class="link_btn">Twitter DM<span></span></a>
                     <h2>Mail form</h2>
                     <p>メールフォームにても受け付けています。返信に時間がかかります。</p>
                     <div class="mailform_container">
                         <form name="contact" method="POST" data-netlify="true" action="../contact/succeeded.html">
                           <div class="form_parts">
                             <label for="name" class="required">お名前</label>
-                            <input name="name" type="text" required placeholder="お名前" />
+                            <div>
+                                <input name="name" type="text" required placeholder="お名前" />
+                            </div>
                           </div>
                           <div class="form_parts">
                             <label for="email" class="required">メールアドレス</label>
-                            <input name="email" type="email" required  placeholder="obasanz087@example.com"/>
+                            <div>
+                                <input name="email" type="email" required  placeholder="obasanz087@example.com"/>
+                            </div>
                           </div>
                           <div class="form_parts">
                             <label for="content" class="required">お問い合わせ内容</label>
-                            <textarea name="content" rows="10" required placeholder="お問い合わせ内容"></textarea>
+                            <div>
+                                <textarea name="content" rows="10" required placeholder="お問い合わせ内容"></textarea>
+                            </div>
                           </div>
                           <div class="recaptcha" data-netlify-recaptcha="true"></div>
                           <p><span>*</span>がついているものは必須項目です。</p>
@@ -136,7 +142,7 @@
                             <div class="PageTop_btn">
                                 <span></span>
                                 <p>Go to the top</p>
-                                <a href="index.html#top">
+                                <a href="index.html#top"></a>
                             </div>  
                         </div>
                     </div>

@@ -578,13 +578,12 @@ footer .footer_wrapper .footer_copyright {
   font-family: "Manrope", sans-serif;
   color: #999;
   font-size: 13px;
-  line-height: 1;
   letter-spacing: 0.05em;
 }
 
 .footer_bottomlink_wrapper {
   text-align: right;
-  margin-top: -10px;
+  margin-top: -18px;
 }
 @media screen and (max-width: 599px) {
   .footer_bottomlink_wrapper {
