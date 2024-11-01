@@ -1,0 +1,222 @@
+@charset "UTF-8";
+:root {
+  --text_color:#232323;
+  --pagetop_text_color:#fff;
+  --wrapper_bg_color:#ececec;
+  --accent_color:#3f4c59;
+  --accent_color2:#3f4c59;
+  --index_bg_color:rgba(230, 230, 230, 0.68);
+  --weak_bg_color:#ddd;
+  --bg_color:#fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #3a3a3a;
+    color: #ececec;
+  }
+  :root {
+    --text_color:#ececec;
+    --pagetop_text_color:#fff;
+    --wrapper_bg_color:#545454;
+    --accent_color:#e8aa14;
+    --accent_color2:#70623c;
+    --index_bg_color:rgba(84, 84, 84, 0.678);
+    --weak_bg_color:#898989;
+    --bg_color:#3a3a3a;
+  }
+}
+* {
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+  max-width: 1920px;
+}
+
+.pc_hamburger span {
+  background: var(--text_color);
+}
+
+img {
+  vertical-align: top;
+}
+
+main {
+  max-width: 1440px;
+  padding: 0 5%;
+}
+
+h3 {
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+h4 {
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1.35rem;
+  margin: 1rem 0 1rem 0rem;
+  border-left: solid var(--accent_color) 5px;
+}
+
+.page_head .background {
+  width: 35%;
+}
+@media (max-width: 959px) {
+  .page_head .background {
+    display: none;
+  }
+}
+@media (max-width: 959px) {
+  .page_head .img_back {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .page_head .title_container {
+    position: absolute;
+    top: calc(50% + 1vw);
+    left: 2vw;
+    transform: translateY(-50%);
+    width: 30%;
+  }
+}
+@media (max-width: 959px) {
+  .page_head .title_container {
+    position: static;
+    transform: none;
+    padding: 2.5vw 0;
+  }
+}
+.page_head .title_container h1 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  position: static;
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.075rem;
+}
+.page_head .title_container p {
+  font-size: 0.9rem;
+}
+.page_head img {
+  height: 16.5vw;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px 25px 0 25px;
+}
+@media (max-width: 959px) {
+  .page_head img {
+    height: 20vh;
+    border-radius: 25px 25px 0 25px;
+  }
+}
+
+.deco {
+  position: absolute;
+  line-height: 1rem;
+  color: #888888;
+}
+@media (min-width: 960px) {
+  .deco {
+    top: 2vw;
+    left: 2vw;
+  }
+}
+.deco span {
+  margin-left: 1rem;
+}
+@media (max-width: 959px) {
+  .deco {
+    bottom: 2.5vw;
+    right: 2.5vw;
+    font-size: 0.6rem;
+  }
+}
+
+p {
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 2rem;
+}
+p a {
+  color: var(--accent_color);
+}
+p a:visited {
+  color: var(--accent_color);
+}
+p .weak {
+  color: var(--weak_bg_color);
+}
+
+.b {
+  margin-top: 1rem;
+}
+
+section {
+  max-width: 800px;
+}
+
+.article_list {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding-left: 0;
+}
+.article_list li:before {
+  content: "●";
+  color: var(--accent_color);
+  font-size: 0.5rem;
+  line-height: 1rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.article_list li {
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  line-height: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  position: relative;
+}
+.article_list.background {
+  background: var(--wrapper_bg_color);
+  padding: 1rem 1.5rem;
+  border-radius: 20px 20px 0 20px;
+}
+
+.img_box {
+  display: flex;
+  gap: 1.15rem;
+  margin: 1rem 0;
+}
+@media (max-width: 959px) {
+  .img_box {
+    display: block;
+    margin: 1rem 0 0;
+  }
+  .img_box span div {
+    margin-bottom: 1rem;
+  }
+}
+.img_box span {
+  flex: 1;
+}
+.img_box span img {
+  height: auto;
+  width: 100%;
+  border-radius: 20px 20px 0 20px;
+}
+.img_box span div {
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  padding: 0.25rem;
+}
+.img_box span div i {
+  margin-right: 0.25rem;
+}/*# sourceMappingURL=style.css.map */
