@@ -48,9 +48,7 @@ header .header_nav p {
   display: inline-block;
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
-  letter-spacing: 0.03em;
-  font-feature-settings: "tnum";
-  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -121,11 +119,6 @@ header .header_nav p {
   left: 5px;
   transition: 0.2s;
 }
-@media screen and (max-width: 599px) {
-  .header_btn span::before {
-    height: 2px;
-  }
-}
 .header_btn span::after {
   content: "";
   background: #4d4d4d;
@@ -135,11 +128,6 @@ header .header_nav p {
   top: 60%;
   left: 5px;
   transition: 0.2s;
-}
-@media screen and (max-width: 599px) {
-  .header_btn span::after {
-    height: 2px;
-  }
 }
 .header_btn span.active::before {
   content: "";
@@ -151,11 +139,6 @@ header .header_nav p {
   left: 5px;
   transform: rotate(45deg);
 }
-@media screen and (max-width: 599px) {
-  .header_btn span.active::before {
-    height: 2px;
-  }
-}
 .header_btn span.active::after {
   content: "";
   background: #4d4d4d;
@@ -165,11 +148,6 @@ header .header_nav p {
   top: 50%;
   left: 5px;
   transform: rotate(-45deg);
-}
-@media screen and (max-width: 599px) {
-  .header_btn span.active::after {
-    height: 2px;
-  }
 }
 .header_btn:hover {
   background: #4d4d4d;
@@ -739,7 +717,12 @@ main .contents_wrapper {
 main .contents_wrapper .pagehead_title {
   font-size: 50px;
   font-family: "Manrope", sans-serif;
-  margin-bottom: 5vw;
+  margin: 50px 0 100px;
+}
+@media screen and (max-width: 599px) {
+  main .contents_wrapper .pagehead_title {
+    margin: 25px 0 50px;
+  }
 }
 main .contents_wrapper .contents_container {
   max-width: 800px;
@@ -770,79 +753,48 @@ main .contents_wrapper .contents_container a {
   border-radius: 20px;
   margin: 20px 0;
 }
-.mailform_container form .form_parts {
+.mailform_container form div {
   display: flex;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 599px) {
-  .mailform_container form .form_parts {
+  .mailform_container form div {
     display: block;
   }
 }
-.mailform_container form .form_parts label {
+.mailform_container form div label {
   line-height: 2;
   flex: 1;
   font-weight: 500;
 }
-.mailform_container form .form_parts label.required::after {
+.mailform_container form div label.required::after {
   content: "*";
   color: #fe8080;
 }
-.mailform_container form .form_parts div {
-  position: relative;
-  flex: 3;
-}
-.mailform_container form .form_parts div input {
-  width: 100%;
+.mailform_container form div input {
+  border-bottom: solid 2px #999;
   line-height: 2;
+  flex: 3;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;
-  outline: 0;
-  padding: 2px 8px;
-  margin-bottom: 2px;
 }
 @media screen and (max-width: 599px) {
-  .mailform_container form .form_parts div input {
+  .mailform_container form div input {
     display: block;
     width: 100%;
   }
 }
-.mailform_container form .form_parts div input:focus {
-  border: solid 1px #4d4d4d;
-  border-radius: 10px;
-  margin-bottom: 0px;
-}
-.mailform_container form .form_parts div::after {
-  position: absolute;
-  content: "";
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #ccc;
-}
-.mailform_container form .form_parts div textarea {
-  width: 100%;
+.mailform_container form div textarea {
+  flex: 3;
+  border-bottom: solid 2px #999;
   line-height: 2;
   font-size: 13px;
-  outline: 0;
-  position: relative;
-  padding: 5px 8px;
-  margin-bottom: 2px;
 }
 @media screen and (max-width: 599px) {
-  .mailform_container form .form_parts div textarea {
+  .mailform_container form div textarea {
     display: block;
     width: 100%;
   }
-}
-.mailform_container form .form_parts div textarea:focus {
-  border: solid 1px #4d4d4d;
-  border-radius: 10px;
-  margin-bottom: 0px;
-}
-.mailform_container form .recaptcha {
-  margin: 30px 0;
 }
 .mailform_container form p {
   font-size: 13px;
@@ -958,18 +910,4 @@ main .contents_wrapper .contents_container a {
   100% {
     left: 50%;
   }
-}
-.mailform_container form button:focus {
-  background: #4d4d4d;
-  color: #e6e6e6;
-  outline: 0;
-}
-.mailform_container form button:focus::after {
-  transform: scale(1, 1);
-}
-.mailform_container form button:focus::before {
-  background: #c0feb3;
-}
-.mailform_container form button:focus span::before {
-  animation: btn-hover-on 0.3s forwards;
 }/*# sourceMappingURL=style.css.map */

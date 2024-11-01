@@ -48,9 +48,7 @@ header .header_nav p {
   display: inline-block;
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
-  letter-spacing: 0.03em;
-  font-feature-settings: "tnum";
-  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -121,11 +119,6 @@ header .header_nav p {
   left: 5px;
   transition: 0.2s;
 }
-@media screen and (max-width: 599px) {
-  .header_btn span::before {
-    height: 2px;
-  }
-}
 .header_btn span::after {
   content: "";
   background: #4d4d4d;
@@ -135,11 +128,6 @@ header .header_nav p {
   top: 60%;
   left: 5px;
   transition: 0.2s;
-}
-@media screen and (max-width: 599px) {
-  .header_btn span::after {
-    height: 2px;
-  }
 }
 .header_btn span.active::before {
   content: "";
@@ -151,11 +139,6 @@ header .header_nav p {
   left: 5px;
   transform: rotate(45deg);
 }
-@media screen and (max-width: 599px) {
-  .header_btn span.active::before {
-    height: 2px;
-  }
-}
 .header_btn span.active::after {
   content: "";
   background: #4d4d4d;
@@ -165,11 +148,6 @@ header .header_nav p {
   top: 50%;
   left: 5px;
   transform: rotate(-45deg);
-}
-@media screen and (max-width: 599px) {
-  .header_btn span.active::after {
-    height: 2px;
-  }
 }
 .header_btn:hover {
   background: #4d4d4d;
