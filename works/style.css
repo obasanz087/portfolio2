@@ -562,7 +562,7 @@ footer .footer_wrapper .footer_copyright {
 
 .footer_bottomlink_wrapper {
   text-align: right;
-  margin-top: -10px;
+  margin-top: -18px;
 }
 @media screen and (max-width: 599px) {
   .footer_bottomlink_wrapper {
@@ -799,11 +799,16 @@ main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner
 }
 .content_wrapper2 .btn_block p {
   letter-spacing: 0.075rem;
-  font-size: 1rem;
   padding: 15px 0 0;
+  font-size: 16px;
   display: inline-block;
   border-bottom: solid 1px #fff;
   position: relative;
+}
+@media screen and (max-width: 599px) {
+  .content_wrapper2 .btn_block p {
+    font-size: 13px;
+  }
 }
 .content_wrapper2 .btn_block p::after {
   content: "";

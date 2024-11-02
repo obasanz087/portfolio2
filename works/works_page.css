@@ -562,7 +562,7 @@ footer .footer_wrapper .footer_copyright {
 
 .footer_bottomlink_wrapper {
   text-align: right;
-  margin-top: -10px;
+  margin-top: -18px;
 }
 @media screen and (max-width: 599px) {
   .footer_bottomlink_wrapper {
@@ -722,6 +722,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1vw;
+  font-family: "Manrope", "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 1024px) {
   .gallery {
@@ -776,12 +777,24 @@ footer {
 }
 .gallery .gallery_info .building_txt {
   letter-spacing: 0.075rem;
-  line-height: 2rem;
+  line-height: 2;
+}
+@media screen and (max-width: 599px) {
+  .gallery .gallery_info .building_txt {
+    font-size: 14px;
+    line-height: 1.75;
+  }
 }
 .gallery .gallery_info table {
   margin-top: 2vw;
   line-height: 30px;
   letter-spacing: 0.075rem;
+}
+@media screen and (max-width: 599px) {
+  .gallery .gallery_info table {
+    font-size: 14px;
+    margin-top: 7vw;
+  }
 }
 .gallery .gallery_info table th {
   text-align: left;
