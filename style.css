@@ -773,6 +773,11 @@ main .main_wrapper .works_inner img {
   transition: 0.2s;
   filter: saturate(20%);
   border-radius: 10px;
+  background: #333;
+  background-image: url(assets/loading.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
 }
 main .main_wrapper .works_inner p {
   line-height: 1;
