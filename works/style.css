@@ -48,6 +48,10 @@ header .header_nav p {
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
   letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -65,6 +69,9 @@ header .header_nav p {
   position: relative;
   transition: 0.3s;
   letter-spacing: 0.05em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   .header_btn {
@@ -801,6 +808,7 @@ main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner
   letter-spacing: 0.075rem;
   padding: 15px 0 0;
   font-size: 16px;
+  font-family: "Manrope", "Noto Sans JP", sans-serif;
   display: inline-block;
   border-bottom: solid 1px #fff;
   position: relative;

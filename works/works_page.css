@@ -48,6 +48,10 @@ header .header_nav p {
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
   letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -65,6 +69,9 @@ header .header_nav p {
   position: relative;
   transition: 0.3s;
   letter-spacing: 0.05em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   .header_btn {
@@ -952,7 +959,6 @@ footer {
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn {
   padding: 20px 25px 20px 45px;
   line-height: 60px;
-  letter-spacing: 0.075rem;
   position: relative;
 }
 @media screen and (max-width: 599px) {
@@ -960,6 +966,7 @@ footer {
     padding: 0 0 0 30px;
     width: calc(100% - 30px);
     display: block;
+    font-size: 13px;
   }
 }
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn::before {
@@ -1045,15 +1052,14 @@ footer {
 .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn {
   padding: 20px 45px 20px 25px;
   line-height: 60px;
-  letter-spacing: 0.075rem;
   position: relative;
 }
 @media screen and (max-width: 599px) {
   .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn {
     padding: 0 30px 0 0px;
     display: block;
-    width: calc(100% - 30px);
     text-align: right;
+    font-size: 13px;
   }
 }
 .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn::before {

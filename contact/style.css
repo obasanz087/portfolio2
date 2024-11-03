@@ -49,6 +49,10 @@ header .header_nav p {
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
   letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -66,6 +70,9 @@ header .header_nav p {
   position: relative;
   transition: 0.3s;
   letter-spacing: 0.05em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   .header_btn {
@@ -563,7 +570,7 @@ footer .footer_wrapper .footer_copyright {
 
 .footer_bottomlink_wrapper {
   text-align: right;
-  margin-top: -10px;
+  margin-top: -18px;
 }
 @media screen and (max-width: 599px) {
   .footer_bottomlink_wrapper {
@@ -766,6 +773,7 @@ main .contents_wrapper .contents_container a {
   line-height: 2;
   flex: 1;
   font-weight: 500;
+  font-family: "Manrope", "Noto Sans JP", sans-serif;
 }
 .mailform_container form div label.required::after {
   content: "*";
@@ -789,6 +797,7 @@ main .contents_wrapper .contents_container a {
   border-bottom: solid 2px #999;
   line-height: 2;
   font-size: 13px;
+  font-family: "Manrope", "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 599px) {
   .mailform_container form div textarea {
@@ -817,6 +826,9 @@ main .contents_wrapper .contents_container a {
   bottom: -2px;
   left: 0;
   background: #4d4d4d;
+}
+.mailform_container form .recaptcha {
+  margin-bottom: 0 !important;
 }
 .mailform_container form button {
   margin-top: 20px;

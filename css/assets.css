@@ -48,6 +48,10 @@ header .header_nav p {
   margin-right: 30px;
   font-family: "Manrope", sans-serif;
   letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   header .header_nav .date {
@@ -65,6 +69,9 @@ header .header_nav p {
   position: relative;
   transition: 0.3s;
   letter-spacing: 0.05em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 599px) {
   .header_btn {
