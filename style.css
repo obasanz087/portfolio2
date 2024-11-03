@@ -777,6 +777,7 @@ main .main_wrapper .works_inner {
 }
 main .main_wrapper .works_inner img {
   width: 100%;
+  height: auto;
   transition: 0.2s;
   filter: saturate(20%);
   border-radius: 10px;
