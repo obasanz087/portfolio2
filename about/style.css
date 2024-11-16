@@ -743,8 +743,8 @@ main .contents_wrapper .contents_container .about_img_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 70%;
-  margin: 0 auto 20px auto;
-  gap: 15px;
+  margin: 40px auto;
+  gap: 10px;
 }
 @media screen and (max-width: 599px) {
   main .contents_wrapper .contents_container .about_img_grid {
@@ -757,5 +757,17 @@ main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner
 }
 main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner img {
   width: 100%;
-  border-radius: 10px;
+  filter: grayscale(40%);
+}
+main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner img.grid1 {
+  border-radius: 20px 0 0 0;
+}
+main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner img.grid2 {
+  border-radius: 0 20px 0 0;
+}
+main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner img.grid3 {
+  border-radius: 0 0 0 20px;
+}
+main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner img.grid4 {
+  border-radius: 0 0 20px 0;
 }/*# sourceMappingURL=style.css.map */

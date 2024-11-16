@@ -606,7 +606,8 @@ footer .footer_wrapper .footer_copyright {
   transition: 0.2s;
 }
 .footer_bottomlink_wrapper .link__inner:hover {
-  text-decoration: underline;
+  border-bottom: solid 1px #999;
+  text-decoration: none !important;
 }
 .footer_bottomlink_wrapper .link__inner:hover::before {
   background: #c0feb3;
@@ -736,28 +737,41 @@ main .contents_wrapper .contents_container {
   max-width: 800px;
   margin: 0 auto;
 }
-main .contents_wrapper .contents_container .privacy_policy_date {
+main .contents_wrapper .contents_container .policy_header h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "Manrope", "Noto Sans JP", sans-serif;
+  margin: 0 0 10px;
+}
+main .contents_wrapper .contents_container .policy_header .privacy_policy_date {
   font-size: 13px;
   font-family: "Manrope", sans-serif;
   margin-bottom: 0;
   letter-spacing: 0.05em;
 }
-main .contents_wrapper .contents_container .privacy_policy_date::before {
-  content: "作成日";
+main .contents_wrapper .contents_container .policy_header .privacy_policy_date::before {
+  content: "制定日";
   font-family: "Noto Sans JP", sans-serif;
   margin-right: 10px;
   letter-spacing: 0;
 }
-main .contents_wrapper .contents_container h2 {
+main .contents_wrapper .contents_container .policy_header .privacy_policy_update_date {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 0;
+  letter-spacing: 0.05em;
+}
+main .contents_wrapper .contents_container .policy_header .privacy_policy_update_date::before {
+  content: "改変日";
+  font-family: "Noto Sans JP", sans-serif;
+  margin-right: 10px;
+  letter-spacing: 0;
+}
+main .contents_wrapper .contents_container h3 {
   font-size: 30px;
   line-height: 1.5;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
   margin: 70px 0 20px;
-}
-main .contents_wrapper .contents_container h2.title_head {
-  margin-top: 20px;
-  padding-top: 70px;
-  border-top: solid 1px #e6e6e6;
 }
 main .contents_wrapper .contents_container p {
   font-family: "Manrope", "Noto Sans JP", sans-serif;

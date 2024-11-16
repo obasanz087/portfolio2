@@ -780,9 +780,9 @@ main .contents_wrapper .contents_container a {
   color: #fe8080;
 }
 .mailform_container form div input {
-  border-bottom: solid 2px #999;
-  line-height: 2;
   flex: 3;
+  width: 100%;
+  line-height: 1;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;
 }
@@ -792,9 +792,15 @@ main .contents_wrapper .contents_container a {
     width: 100%;
   }
 }
+.mailform_container form div .form_parts_underline {
+  flex: 3;
+  width: 100%;
+  height: 2px;
+  background: #999;
+}
 .mailform_container form div textarea {
   flex: 3;
-  border-bottom: solid 2px #999;
+  width: 100%;
   line-height: 2;
   font-size: 13px;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
@@ -804,6 +810,11 @@ main .contents_wrapper .contents_container a {
     display: block;
     width: 100%;
   }
+}
+.mailform_container form div .form_parts_underline {
+  width: 100%;
+  height: 2px;
+  background: #999;
 }
 .mailform_container form p {
   font-size: 13px;
@@ -889,17 +900,18 @@ main .contents_wrapper .contents_container a {
   transform: translate(-50%, -50%);
   font-size: 17.5px;
 }
-.mailform_container form button:hover {
+.mailform_container form button:hover, .mailform_container form button:focus {
   background: #4d4d4d;
   color: #e6e6e6;
+  outline: 0;
 }
-.mailform_container form button:hover::after {
+.mailform_container form button:hover::after, .mailform_container form button:focus::after {
   transform: scale(1, 1);
 }
-.mailform_container form button:hover::before {
+.mailform_container form button:hover::before, .mailform_container form button:focus::before {
   background: #c0feb3;
 }
-.mailform_container form button:hover span::before {
+.mailform_container form button:hover span::before, .mailform_container form button:focus span::before {
   animation: btn-hover-on 0.3s forwards;
 }
 @keyframes btn-hover-on {
