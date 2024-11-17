@@ -745,7 +745,6 @@ main .main_wrapper h1 span {
   }
 }
 main .main_wrapper .works_container {
-  margin-bottom: 2vw;
   background: #4d4d4d;
   border-radius: 30px;
   padding: 30px;
@@ -820,10 +819,17 @@ main .main_wrapper .works_inner:hover img {
   border-radius: 50px;
   filter: saturate(100%);
 }
-main .main_wrapper .about_container {
-  margin-top: 50px;
+main .main_wrapper .maincontents_container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 75px;
 }
-main .main_wrapper .about_container p {
+@media screen and (max-width: 599px) {
+  main .main_wrapper .maincontents_container {
+    grid-template-columns: 1fr;
+  }
+}
+main .main_wrapper .maincontents_container p {
   margin-bottom: 30px;
   line-height: 2;
   font-family: "Noto Sans JP", sans-serif;

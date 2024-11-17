@@ -724,8 +724,7 @@ main .contents_wrapper {
 main .contents_wrapper .pagehead_title {
   font-size: 50px;
   font-family: "Manrope", sans-serif;
-  margin: 50px auto 100px;
-  max-width: 1440px;
+  margin: 50px auto 140px;
 }
 @media screen and (max-width: 599px) {
   main .contents_wrapper .pagehead_title {
@@ -762,7 +761,7 @@ main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner
 .content_wrapper2 {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 5vw;
+  padding: 0 5vw 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1vw;
