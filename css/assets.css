@@ -612,6 +612,33 @@ footer .footer_wrapper .footer_copyright {
   background: #c0feb3;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  animation: page_animation 0.5s forwards;
+}
+@keyframes page_animation {
+  0% {
+    opacity: 1;
+    filter: blur(100%);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(0%);
+  }
+}
+body.fade::after {
+  opacity: 1;
+}
+
 .link_btn {
   display: inline-block;
   font-family: "Manrope";
