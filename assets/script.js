@@ -33,10 +33,8 @@ $(function() {
     });
 });
 $(function() {
-    $('.header_menu_inner a[href]').click(function() {
+    $('.header_menu_inner_link a[href]').click(function() {
         $('header_menu_icon').removeClass('active');
         $('.header_nav').removeClass('active');
-        $('.header_btn').removeClass('active');
-
     });
   });

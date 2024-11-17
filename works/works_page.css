@@ -605,7 +605,8 @@ footer .footer_wrapper .footer_copyright {
   transition: 0.2s;
 }
 .footer_bottomlink_wrapper .link__inner:hover {
-  text-decoration: underline;
+  border-bottom: solid 1px #999;
+  text-decoration: none !important;
 }
 .footer_bottomlink_wrapper .link__inner:hover::before {
   background: #c0feb3;
