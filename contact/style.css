@@ -606,7 +606,8 @@ footer .footer_wrapper .footer_copyright {
   transition: 0.2s;
 }
 .footer_bottomlink_wrapper .link__inner:hover {
-  text-decoration: underline;
+  border-bottom: solid 1px #999;
+  text-decoration: none !important;
 }
 .footer_bottomlink_wrapper .link__inner:hover::before {
   background: #c0feb3;
@@ -760,58 +761,70 @@ main .contents_wrapper .contents_container a {
   border-radius: 20px;
   margin: 20px 0;
 }
-.mailform_container form div {
-  display: flex;
+.mailform_container form .form_parts {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 599px) {
-  .mailform_container form div {
+  .mailform_container form .form_parts {
     display: block;
   }
 }
-.mailform_container form div label {
+.mailform_container form .form_parts label {
   line-height: 2;
-  flex: 1;
   font-weight: 500;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
 }
-.mailform_container form div label.required::after {
+.mailform_container form .form_parts label.required::after {
   content: "*";
   color: #fe8080;
 }
-.mailform_container form div input {
-  flex: 3;
+.mailform_container form .form_parts .imput_wrapper input {
   width: 100%;
-  line-height: 1;
+  line-height: 2;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;
+  border: solid 1px #fff;
+  padding: 0 10px;
 }
 @media screen and (max-width: 599px) {
-  .mailform_container form div input {
+  .mailform_container form .form_parts .imput_wrapper input {
     display: block;
     width: 100%;
   }
 }
-.mailform_container form div .form_parts_underline {
-  flex: 3;
+.mailform_container form .form_parts .imput_wrapper input:focus {
+  outline: 0;
+  border: solid 1px #333;
+  border-radius: 10px;
+}
+.mailform_container form .form_parts .imput_wrapper .form_parts_underline {
   width: 100%;
+  margin-top: 5px;
   height: 2px;
   background: #999;
 }
-.mailform_container form div textarea {
-  flex: 3;
+.mailform_container form .form_parts .imput_wrapper textarea {
   width: 100%;
   line-height: 2;
   font-size: 13px;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
+  border: solid 1px #fff;
+  padding: 0 10px;
 }
 @media screen and (max-width: 599px) {
-  .mailform_container form div textarea {
+  .mailform_container form .form_parts .imput_wrapper textarea {
     display: block;
     width: 100%;
   }
 }
-.mailform_container form div .form_parts_underline {
+.mailform_container form .form_parts .imput_wrapper textarea:focus {
+  outline: 0;
+  border: solid 1px #333;
+  border-radius: 10px;
+}
+.mailform_container form .form_parts .imput_wrapper .form_parts_underline {
   width: 100%;
   height: 2px;
   background: #999;
@@ -837,6 +850,12 @@ main .contents_wrapper .contents_container a {
   bottom: -2px;
   left: 0;
   background: #4d4d4d;
+}
+.mailform_container form p a:hover {
+  color: #b3b3b3;
+}
+.mailform_container form p a:hover::after {
+  background: #b3b3b3;
 }
 .mailform_container form .recaptcha {
   margin-bottom: 0 !important;
