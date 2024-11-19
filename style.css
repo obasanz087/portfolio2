@@ -1,3 +1,13 @@
+*::-moz-selection {
+  background: #cbd8ca;
+  color: #333;
+}
+
+*::selection {
+  background: #cbd8ca;
+  color: #333;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -610,6 +620,23 @@ footer .footer_wrapper .footer_copyright {
 }
 .footer_bottomlink_wrapper .link__inner:hover::before {
   background: #c0feb3;
+}
+
+.contents_wrapper {
+  padding: 0 5vw;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.contents_wrapper .pagehead_title {
+  font-size: 50px;
+  font-family: "Manrope", sans-serif;
+  margin: 75px auto 145.5px;
+  font-weight: 500;
+}
+@media screen and (max-width: 599px) {
+  .contents_wrapper .pagehead_title {
+    margin: 25px 0 50px;
+  }
 }
 
 .link_btn {

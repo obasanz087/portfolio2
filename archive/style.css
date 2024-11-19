@@ -612,6 +612,22 @@ footer .footer_wrapper .footer_copyright {
   background: #c0feb3;
 }
 
+.contents_wrapper {
+  padding: 0 5vw;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.contents_wrapper .pagehead_title {
+  font-size: 50px;
+  font-family: "Manrope", sans-serif;
+  margin: 50px auto 140px;
+}
+@media screen and (max-width: 599px) {
+  .contents_wrapper .pagehead_title {
+    margin: 25px 0 50px;
+  }
+}
+
 .link_btn {
   display: inline-block;
   font-family: "Manrope";
@@ -717,35 +733,21 @@ footer .footer_wrapper .footer_copyright {
 main {
   margin: 0 auto;
 }
-main .contents_wrapper {
-  max-width: 1920px;
-  padding: 0 5vw;
-}
-main .contents_wrapper .pagehead_title {
-  font-size: 50px;
-  font-family: "Manrope", sans-serif;
-  margin: 50px 0 140px;
-}
-@media screen and (max-width: 599px) {
-  main .contents_wrapper .pagehead_title {
-    margin: 25px 0 50px;
-  }
-}
-main .contents_wrapper .contents_container {
+main .contents_container {
   max-width: 800px;
   margin: 0 auto;
 }
-main .contents_wrapper .flex_container {
+main .flex_container {
   display: flex;
   gap: 30px;
 }
 @media screen and (max-width: 599px) {
-  main .contents_wrapper .flex_container {
+  main .flex_container {
     display: block;
     margin-bottom: 5vw;
   }
 }
-main .contents_wrapper .flex_container .flex_inner {
+main .flex_container .flex_inner {
   flex: 1;
   background: #e6e6e6;
   padding: 15px;
@@ -754,25 +756,25 @@ main .contents_wrapper .flex_container .flex_inner {
   transition: 0.2s;
 }
 @media screen and (max-width: 599px) {
-  main .contents_wrapper .flex_container .flex_inner {
+  main .flex_container .flex_inner {
     margin-bottom: 5vw;
   }
 }
-main .contents_wrapper .flex_container .flex_inner p {
+main .flex_container .flex_inner p {
   color: #4d4d4d;
   font-family: "Manrope", sans-serif;
 }
-main .contents_wrapper .flex_container .flex_inner p.flex_inner_title {
+main .flex_container .flex_inner p.flex_inner_title {
   font-size: 30px;
   margin-bottom: 10px;
 }
-main .contents_wrapper .flex_container .flex_inner img {
+main .flex_container .flex_inner img {
   width: 100%;
   filter: grayscale(50%);
   margin-top: 15px;
   border-radius: 10px;
 }
-main .contents_wrapper .flex_container .flex_inner span {
+main .flex_container .flex_inner span {
   display: inline-block;
   position: absolute;
   width: 35px;
@@ -783,7 +785,7 @@ main .contents_wrapper .flex_container .flex_inner span {
   border-radius: 7.5px;
   overflow: hidden;
 }
-main .contents_wrapper .flex_container .flex_inner span::before {
+main .flex_container .flex_inner span::before {
   color: #000;
   content: "\e5c8";
   font-family: "Material Icons";
@@ -793,27 +795,27 @@ main .contents_wrapper .flex_container .flex_inner span::before {
   transform: translate(-50%, -50%);
   font-size: 17.5px;
 }
-main .contents_wrapper .flex_container .flex_inner a {
+main .flex_container .flex_inner a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-main .contents_wrapper .flex_container .flex_inner:hover {
+main .flex_container .flex_inner:hover {
   background: #4d4d4d;
   color: #e6e6e6;
 }
-main .contents_wrapper .flex_container .flex_inner:hover p {
+main .flex_container .flex_inner:hover p {
   color: #e6e6e6;
 }
-main .contents_wrapper .flex_container .flex_inner:hover::after {
+main .flex_container .flex_inner:hover::after {
   transform: scale(1, 1);
 }
-main .contents_wrapper .flex_container .flex_inner:hover::before {
+main .flex_container .flex_inner:hover::before {
   background: #c0feb3;
 }
-main .contents_wrapper .flex_container .flex_inner:hover span::before {
+main .flex_container .flex_inner:hover span::before {
   animation: btn-hover-on 0.3s forwards;
 }
 @keyframes btn-hover-on {

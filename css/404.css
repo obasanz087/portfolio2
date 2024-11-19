@@ -1,3 +1,13 @@
+*::-moz-selection {
+  background: #cbd8ca;
+  color: #333;
+}
+
+*::selection {
+  background: #cbd8ca;
+  color: #333;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -620,12 +630,21 @@ footer .footer_wrapper .footer_copyright {
 .contents_wrapper .pagehead_title {
   font-size: 50px;
   font-family: "Manrope", sans-serif;
-  margin: 50px auto 140px;
+  margin: 75px auto 145.5px;
+  font-weight: 500;
 }
 @media screen and (max-width: 599px) {
   .contents_wrapper .pagehead_title {
     margin: 25px 0 50px;
   }
+}
+.contents_wrapper .pagehead_title span {
+  display: block;
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+  color: #759772;
 }
 
 .link_btn {
@@ -733,8 +752,11 @@ footer .footer_wrapper .footer_copyright {
 main {
   margin: 0 auto;
 }
+main .contents_wrapper .pagehead_title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 main .contents_wrapper .contents_container {
-  max-width: 800px;
   margin: 0 auto;
 }
 main .contents_wrapper .contents_container p {
@@ -773,4 +795,4 @@ main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner
 }
 main .contents_wrapper .contents_container .about_img_grid .about_img_grid_inner img.grid4 {
   border-radius: 0 0 20px 0;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=404.css.map */
