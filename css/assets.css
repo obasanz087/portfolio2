@@ -103,19 +103,6 @@ header .header_nav p {
   left: 17px;
   transition: 0.3s;
 }
-.header_btn::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 38px;
-  bottom: 13.5px;
-  width: calc(100% - 21px - 17px - 70px);
-  height: 1px;
-  background: #e6e6e6;
-  transform-origin: left top;
-  transform: scale(0, 1);
-  transition: 0.2s;
-}
 .header_btn span {
   display: inline-block;
   position: absolute;
@@ -167,14 +154,14 @@ header .header_nav p {
   left: 5px;
   transform: rotate(-45deg);
 }
-.header_btn:hover {
+.header_btn:hover, .header_btn.active {
   background: #4d4d4d;
   color: #e6e6e6;
 }
-.header_btn:hover::after {
+.header_btn:hover::after, .header_btn.active::after {
   transform: scale(1, 1);
 }
-.header_btn:hover::before {
+.header_btn:hover::before, .header_btn.active::before {
   background: #c0feb3;
 }
 .header_btn:visited {

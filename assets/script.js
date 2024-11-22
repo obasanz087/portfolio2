@@ -22,6 +22,7 @@ setInterval('header_date_update()',1000);
 
 $(function() {
     $('.header_btn').click(function() {
+        $(this).toggleClass('active');
         $('.header_nav').toggleClass('active');
  
         if ($('.header_nav').hasClass('active')) {
