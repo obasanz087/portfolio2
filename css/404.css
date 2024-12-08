@@ -1,8 +1,10 @@
+* {
+  scroll-behavior: smooth;
+}
 *::-moz-selection {
   background: #cbd8ca;
   color: #333;
 }
-
 *::selection {
   background: #cbd8ca;
   color: #333;
@@ -101,19 +103,6 @@ header .header_nav p {
   left: 17px;
   transition: 0.3s;
 }
-.header_btn::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 38px;
-  bottom: 13.5px;
-  width: calc(100% - 21px - 17px - 70px);
-  height: 1px;
-  background: #e6e6e6;
-  transform-origin: left top;
-  transform: scale(0, 1);
-  transition: 0.2s;
-}
 .header_btn span {
   display: inline-block;
   position: absolute;
@@ -165,14 +154,14 @@ header .header_nav p {
   left: 5px;
   transform: rotate(-45deg);
 }
-.header_btn:hover {
+.header_btn:hover, .header_btn.active {
   background: #4d4d4d;
   color: #e6e6e6;
 }
-.header_btn:hover::after {
+.header_btn:hover::after, .header_btn.active::after {
   transform: scale(1, 1);
 }
-.header_btn:hover::before {
+.header_btn:hover::before, .header_btn.active::before {
   background: #c0feb3;
 }
 .header_btn:visited {
@@ -637,14 +626,6 @@ footer .footer_wrapper .footer_copyright {
   .contents_wrapper .pagehead_title {
     margin: 25px 0 50px;
   }
-}
-.contents_wrapper .pagehead_title span {
-  display: block;
-  font-size: 16px;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 600;
-  margin-top: 5px;
-  color: #759772;
 }
 
 .link_btn {

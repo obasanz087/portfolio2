@@ -33,7 +33,6 @@ header .header_wrapper .header_logo h1 {
   letter-spacing: 0.05em;
   font-size: 25px;
   line-height: 50px;
-  display: inline-block;
 }
 header .header_wrapper .header_logo h1 span {
   font-size: 12px;
