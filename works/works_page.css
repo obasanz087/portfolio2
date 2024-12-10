@@ -824,6 +824,7 @@ footer {
   text-align: left;
   padding-right: 3rem;
   font-weight: 400;
+  min-width: 100px;
 }
 .gallery .gallery_info table td .small {
   font-size: 0.7em;
@@ -940,13 +941,14 @@ footer {
   }
 }
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper, .gallery .gallery_content .next_prev_container .next_btn_wrapper {
-  transition: 0.2s;
-  border: solid 1px #e6e6e6;
+  transition: 0.3s;
+  background: #e6e6e6;
   margin: 0 1vw;
+  position: relative;
+  border-radius: 15px;
 }
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper:hover, .gallery .gallery_content .next_prev_container .next_btn_wrapper:hover {
-  background: #e6e6e6;
-  border: solid 1px #4d4d4d;
+  background: #4d4d4d;
 }
 @media screen and (max-width: 599px) {
   .gallery .gallery_content .next_prev_container .prev_btn_wrapper, .gallery .gallery_content .next_prev_container .next_btn_wrapper {
@@ -955,189 +957,114 @@ footer {
 }
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper {
   display: inline-block;
-  border-radius: 10px;
+  position: relative;
+  line-height: 60px;
 }
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn {
-  padding: 20px 25px 20px 45px;
-  line-height: 60px;
-  position: relative;
+  padding: 22px 15px 22px 60px;
 }
-@media screen and (max-width: 599px) {
-  .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn {
-    padding: 0 0 0 30px;
-    width: calc(100% - 30px);
-    display: block;
-    font-size: 13px;
-  }
-}
-.gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn::before {
-  content: "";
-  background: #527d4f;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+.gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn span {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: inline-block;
   position: absolute;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  left: 25px;
+  border-radius: 7px;
+  overflow: hidden;
 }
-@media screen and (max-width: 599px) {
-  .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn::before {
-    left: 15px;
-  }
+.gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn span::after {
+  content: "\e5c4";
+  font-family: "Material Icons";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
-@media screen and (min-width: 1025px) {
-  .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn::before {
-    animation: prev_btn_out 0.2s forwards;
-  }
-  @keyframes prev_btn_out {
-    0% {
-      width: 20px;
-      height: 20px;
-      left: 15px;
-    }
-    100% {
-      width: 4px;
-      height: 4px;
-      right: 25px;
-    }
-  }
+.gallery .gallery_content .next_prev_container .prev_btn_wrapper:hover .prev_btn {
+  color: #e6e6e6;
 }
-@media screen and (min-width: 1025px) {
-  .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn:hover::before {
-    animation: prev_btn_in 0.2s forwards;
-  }
-  @keyframes prev_btn_in {
-    0% {
-      width: 4px;
-      height: 4px;
-      right: 25px;
-    }
-    100% {
-      width: 20px;
-      height: 20px;
-      left: 15px;
-    }
-  }
+.gallery .gallery_content .next_prev_container .prev_btn_wrapper:hover .prev_btn span::after {
+  color: #000;
+  animation: prev_btn-hoverd 0.3s forwards;
 }
-@media screen and (min-width: 1025px) {
-  .gallery .gallery_content .next_prev_container .prev_btn_wrapper .prev_btn:hover::after {
-    content: "\f060";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 37px;
-    font-size: 0.7rem;
+@keyframes prev_btn-hoverd {
+  0% {
+    left: 50%;
+  }
+  48% {
+    left: -10%;
+  }
+  49% {
     color: #fff;
-    animation: prev_btn_arrow 0.3s forwards ease-in-out;
   }
-  @keyframes prev_btn_arrow {
-    0% {
-      right: 37px;
-      z-index: -1;
-    }
-    50% {
-      right: 37px;
-    }
-    100% {
-      left: 21px;
-    }
+  51% {
+    left: 110%;
+  }
+  42% {
+    color: #333;
+  }
+  100% {
+    left: 50%;
   }
 }
 .gallery .gallery_content .next_prev_container .next_btn_wrapper {
   display: inline-block;
-  border-radius: 10px;
+  position: relative;
+  line-height: 60px;
 }
 .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn {
-  padding: 20px 45px 20px 25px;
-  line-height: 60px;
-  position: relative;
+  padding: 22px 60px 22px 15px;
 }
-@media screen and (max-width: 599px) {
-  .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn {
-    padding: 0 30px 0 0px;
-    display: block;
-    text-align: right;
-    font-size: 13px;
-  }
-}
-.gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn::before {
-  content: "";
-  background: #527d4f;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
+.gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn span {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  display: inline-block;
   position: absolute;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
-  right: 25px;
+  border-radius: 7px;
+  overflow: hidden;
 }
-@media screen and (max-width: 599px) {
-  .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn::before {
-    right: 15px;
-  }
+.gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn span::after {
+  content: "\e5c8";
+  font-family: "Material Icons";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
-@media screen and (min-width: 1025px) {
-  .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn::before {
-    animation: next_btn_out 0.2s forwards;
-  }
-  @keyframes next_btn_out {
-    0% {
-      width: 20px;
-      height: 20px;
-      right: 15px;
-    }
-    100% {
-      width: 4px;
-      height: 4px;
-      right: 25px;
-    }
-  }
+.gallery .gallery_content .next_prev_container .next_btn_wrapper:hover .next_btn {
+  color: #e6e6e6;
 }
-@media screen and (min-width: 1025px) {
-  .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn:hover::before {
-    animation: next_btn_in 0.2s forwards;
-  }
-  @keyframes next_btn_in {
-    0% {
-      width: 4px;
-      height: 4px;
-      right: 25px;
-    }
-    100% {
-      width: 20px;
-      height: 20px;
-      right: 15px;
-    }
-  }
+.gallery .gallery_content .next_prev_container .next_btn_wrapper:hover .next_btn span::after {
+  color: #000;
+  animation: next_btn-hoverd 0.3s forwards;
 }
-@media screen and (min-width: 1025px) {
-  .gallery .gallery_content .next_prev_container .next_btn_wrapper .next_btn:hover::after {
-    content: "\f061";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 35px;
-    font-size: 0.7rem;
+@keyframes next_btn-hoverd {
+  0% {
+    left: 50%;
+  }
+  48% {
+    left: 110%;
+  }
+  49% {
     color: #fff;
-    animation: next_btn_arrow 0.3s forwards;
   }
-  @keyframes next_btn_arrow {
-    0% {
-      right: 35px;
-      z-index: -1;
-    }
-    50% {
-      right: 35px;
-      z-index: -1;
-    }
-    100% {
-      right: 19px;
-    }
+  51% {
+    left: -10%;
+  }
+  42% {
+    color: #333;
+  }
+  100% {
+    left: 50%;
   }
 }
 .gallery h1 {
