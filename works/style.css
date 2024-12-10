@@ -826,7 +826,7 @@ main .contents_container .about_img_grid .about_img_grid_inner img {
   position: absolute;
   width: 100%;
   height: 1px;
-  background: var(--black300);
+  background: #333;
   bottom: -5px;
   left: 0;
   transform-origin: left top;
@@ -834,11 +834,10 @@ main .contents_container .about_img_grid .about_img_grid_inner img {
   transition: 0.2s;
 }
 .content_wrapper2 .btn_block:hover .img_wrapper img {
-  transform: scale(1.2);
+  transform: scale(1.1);
   filter: grayscale(0%);
 }
 .content_wrapper2 .btn_block:hover p::after {
-  background: #333;
   transform: scale(1, 1);
 }
 .content_wrapper2 .btn_block:active {
