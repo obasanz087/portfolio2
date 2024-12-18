@@ -952,7 +952,8 @@ footer {
 }
 @media screen and (max-width: 599px) {
   .gallery .gallery_content .next_prev_container .prev_btn_wrapper, .gallery .gallery_content .next_prev_container .next_btn_wrapper {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+    letter-spacing: -0.075em;
   }
 }
 .gallery .gallery_content .next_prev_container .prev_btn_wrapper {
