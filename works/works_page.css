@@ -183,6 +183,7 @@ header .header_nav p {
   border-radius: 20px;
   padding: 10px;
   top: 130px;
+  box-shadow: 0px 0px 30px 5px #e6e6e6;
   opacity: 0;
   transition: 0.2s;
   visibility: hidden;
@@ -614,7 +615,7 @@ footer .footer_wrapper .footer_copyright {
 .contents_wrapper {
   padding: 0 5vw;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1550px;
 }
 .contents_wrapper .pagehead_title {
   font-size: 50px;
@@ -742,7 +743,7 @@ footer {
 .gallery {
   max-width: 1550px;
   margin: 0 auto;
-  padding: 5vh 3%;
+  padding: 5vh 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1vw;

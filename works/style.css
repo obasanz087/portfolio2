@@ -183,6 +183,7 @@ header .header_nav p {
   border-radius: 20px;
   padding: 10px;
   top: 130px;
+  box-shadow: 0px 0px 30px 5px #e6e6e6;
   opacity: 0;
   transition: 0.2s;
   visibility: hidden;
@@ -614,7 +615,7 @@ footer .footer_wrapper .footer_copyright {
 .contents_wrapper {
   padding: 0 5vw;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1550px;
 }
 .contents_wrapper .pagehead_title {
   font-size: 50px;
@@ -761,7 +762,7 @@ main .contents_container .about_img_grid .about_img_grid_inner img {
 }
 
 .content_wrapper2 {
-  max-width: 1440px;
+  max-width: 1550px;
   margin: 0 auto;
   padding: 0 5vw 5vw;
   display: grid;
@@ -810,7 +811,7 @@ main .contents_container .about_img_grid .about_img_grid_inner img {
 .content_wrapper2 .btn_block p {
   letter-spacing: 0.075rem;
   padding: 15px 0 0;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "Manrope", "Noto Sans JP", sans-serif;
   display: inline-block;
   border-bottom: solid 1px #fff;
@@ -827,7 +828,7 @@ main .contents_container .about_img_grid .about_img_grid_inner img {
   width: 100%;
   height: 1px;
   background: #333;
-  bottom: -5px;
+  bottom: -3px;
   left: 0;
   transform-origin: left top;
   transform: scale(0, 1);
@@ -840,6 +841,6 @@ main .contents_container .about_img_grid .about_img_grid_inner img {
 .content_wrapper2 .btn_block:hover p::after {
   transform: scale(1, 1);
 }
-.content_wrapper2 .btn_block:active {
-  transform: scale(0.95);
+.content_wrapper2 .btn_block:active .img_wrapper img {
+  transform: scale(0.925);
 }/*# sourceMappingURL=style.css.map */
