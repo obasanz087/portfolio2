@@ -738,6 +738,7 @@ footer .footer_wrapper .footer_copyright {
 }
 .content p {
   font-family: "Noto Sans JP", "Manrope", sans-serif;
+  line-height: 2;
   margin-bottom: 20px;
 }
 .content h2 {
