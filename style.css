@@ -786,7 +786,10 @@ main .main_wrapper .works_container .works_gridbox {
 @media screen and (max-width: 599px) {
   main .main_wrapper .works_container .works_gridbox {
     width: calc((100vw - 20px - 20px - 5vw - 5vw) * 4);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    row-gap: 25px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -797,7 +800,6 @@ main .main_wrapper .works_container .works_gridbox {
 main .main_wrapper .works_container .scroll-txt {
   font-family: "Manrope", sans-serif;
   color: #999;
-  margin-bottom: 15px;
   font-size: 14px;
   letter-spacing: 0.025rem;
   position: relative;
@@ -833,6 +835,12 @@ main .main_wrapper .works_container .scroll-txt::after {
   main .main_wrapper .works_container .scroll-txt {
     display: none;
   }
+}
+main .main_wrapper .works_container .line {
+  width: 100%;
+  background: #666;
+  height: 1.5px;
+  margin: 30px 0 20px;
 }
 main .main_wrapper .works_container .link_btn {
   border: solid 1px #666;
