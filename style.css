@@ -761,6 +761,15 @@ main .main_wrapper h1 span {
     display: none;
   }
 }
+@media screen and (max-width: 599px) {
+  main .main_wrapper .scroll-x-wrapper {
+    overflow-x: scroll;
+    border-radius: 20px;
+  }
+}
+main .main_wrapper .scroll-x-wrapper::-webkit-scrollbar {
+  display: none;
+}
 main .main_wrapper .works_container {
   background: #4d4d4d;
   border-radius: 30px;
@@ -776,7 +785,8 @@ main .main_wrapper .works_container .works_gridbox {
 }
 @media screen and (max-width: 599px) {
   main .main_wrapper .works_container .works_gridbox {
-    grid-template-columns: 1fr;
+    width: calc((100vw - 20px - 20px - 5vw - 5vw) * 4);
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 599px) {
@@ -784,11 +794,50 @@ main .main_wrapper .works_container .works_gridbox {
     padding: 20px;
   }
 }
+main .main_wrapper .works_container .scroll-txt {
+  font-family: "Manrope", sans-serif;
+  color: #999;
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 0.025rem;
+  position: relative;
+}
+main .main_wrapper .works_container .scroll-txt::after {
+  content: "\f1df";
+  font-family: "Material Icons";
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  font-size: 16px;
+  transform: translateY(-50%);
+  animation: scroll-arrow-anime 5s infinite;
+}
+@keyframes scroll-arrow-anime {
+  0% {
+    right: 0;
+  }
+  30% {
+    right: 10%;
+  }
+  50% {
+    right: 10%;
+  }
+  80% {
+    right: 0;
+  }
+  100% {
+    right: 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  main .main_wrapper .works_container .scroll-txt {
+    display: none;
+  }
+}
 main .main_wrapper .works_container .link_btn {
   border: solid 1px #666;
 }
 main .main_wrapper .works_inner {
-  grid: 1fr;
   width: 100%;
   position: relative;
 }
@@ -803,6 +852,11 @@ main .main_wrapper .works_inner img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60px;
+}
+@media screen and (max-width: 599px) {
+  main .main_wrapper .works_inner img {
+    width: calc(100vw - 20px - 20px - 5vw - 5vw);
+  }
 }
 main .main_wrapper .works_inner p {
   line-height: 1;
