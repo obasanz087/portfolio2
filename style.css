@@ -764,7 +764,7 @@ main .main_wrapper h1 span {
 @media screen and (max-width: 599px) {
   main .main_wrapper .scroll-x-wrapper {
     overflow-x: scroll;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 }
 main .main_wrapper .scroll-x-wrapper::-webkit-scrollbar {
