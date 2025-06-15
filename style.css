@@ -854,6 +854,11 @@ main .main_wrapper .works_inner {
   width: 100%;
   position: relative;
 }
+@media screen and (max-width: 599px) {
+  main .main_wrapper .works_inner {
+    width: calc(100vw - 20px - 20px - 5vw - 5vw);
+  }
+}
 main .main_wrapper .works_inner img {
   width: 100%;
   height: auto;
@@ -865,11 +870,6 @@ main .main_wrapper .works_inner img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60px;
-}
-@media screen and (max-width: 599px) {
-  main .main_wrapper .works_inner img {
-    width: calc(100vw - 20px - 20px - 5vw - 5vw);
-  }
 }
 main .main_wrapper .works_inner p {
   line-height: 1;
