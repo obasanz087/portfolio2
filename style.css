@@ -842,6 +842,11 @@ main .main_wrapper .works_container .line {
   height: 1.5px;
   margin: 30px 0 20px;
 }
+@media screen and (min-width: 1025px) {
+  main .main_wrapper .works_container .line {
+    display: none;
+  }
+}
 main .main_wrapper .works_container .link_btn {
   border: solid 1px #666;
 }
