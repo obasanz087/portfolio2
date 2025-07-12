@@ -757,6 +757,9 @@ main .contents_wrapper .contents_container .policy_header .privacy_policy_date::
   margin-right: 10px;
   letter-spacing: 0;
 }
+main .contents_wrapper .contents_container .policy_header .privacy_policy_date.re::before {
+  content: "改定日";
+}
 main .contents_wrapper .contents_container .policy_header .privacy_policy_update_date {
   font-size: 13px;
   font-family: "Manrope", sans-serif;
