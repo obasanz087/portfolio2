@@ -106,8 +106,8 @@ header .header_nav p {
 .header_btn span {
   display: inline-block;
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
   background: #fff;
   top: 7.5px;
   right: 7.5px;
@@ -117,7 +117,7 @@ header .header_nav p {
 .header_btn span::before {
   content: "";
   background: #4d4d4d;
-  width: 25px;
+  width: 23px;
   height: 1px;
   position: absolute;
   top: 40%;
@@ -127,7 +127,7 @@ header .header_nav p {
 .header_btn span::after {
   content: "";
   background: #4d4d4d;
-  width: 25px;
+  width: 23px;
   height: 1px;
   position: absolute;
   top: 60%;
@@ -137,7 +137,7 @@ header .header_nav p {
 .header_btn span.active::before {
   content: "";
   background: #4d4d4d;
-  width: 25px;
+  width: 23px;
   height: 1px;
   position: absolute;
   top: 50%;
@@ -147,7 +147,7 @@ header .header_nav p {
 .header_btn span.active::after {
   content: "";
   background: #4d4d4d;
-  width: 25px;
+  width: 23px;
   height: 1px;
   position: absolute;
   top: 50%;
@@ -639,6 +639,11 @@ footer .footer_wrapper .footer_copyright {
   position: relative;
   transition: 0.3s;
   letter-spacing: 0.025em;
+  color: #666;
+  border: solid 1px #e6e6e6;
+}
+.link_btn.dark {
+  border: solid 1px #666;
 }
 .link_btn::before {
   content: "";
@@ -661,10 +666,13 @@ footer .footer_wrapper .footer_copyright {
   bottom: 13.5px;
   width: calc(100% - 21px - 17px - 70px);
   height: 1px;
-  background: #e6e6e6;
+  background: #4d4d4d;
   transform-origin: left top;
   transform: scale(0, 1);
   transition: 0.2s;
+}
+.link_btn.dark::after {
+  background: #e6e6e6;
 }
 .link_btn span {
   display: inline-block;
@@ -676,9 +684,10 @@ footer .footer_wrapper .footer_copyright {
   right: 7.5px;
   border-radius: 7.5px;
   overflow: hidden;
+  border: solid 1px #e6e6e6;
 }
 .link_btn span::before {
-  color: #000;
+  color: #4d4d4d;
   content: "\e5c8";
   font-family: "Material Icons";
   position: absolute;
@@ -687,9 +696,13 @@ footer .footer_wrapper .footer_copyright {
   transform: translate(-50%, -50%);
   font-size: 17.5px;
 }
-.link_btn:hover {
-  background: #4d4d4d;
+.link_btn.dark:hover {
+  background: #000;
   color: #e6e6e6;
+}
+.link_btn:hover {
+  background: #fff;
+  color: #4d4d4d;
 }
 .link_btn:hover::after {
   transform: scale(1, 1);
@@ -721,10 +734,11 @@ footer .footer_wrapper .footer_copyright {
     left: 50%;
   }
 }
-.link_btn:visited {
-  color: #000;
-}
 .link_btn:visited:hover {
+  color: #4d4d4d;
+}
+.link_btn:visited.dark:hover {
+  background: #4d4d4d;
   color: #e6e6e6;
 }
 .link_btn.top_btn {
